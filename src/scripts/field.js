@@ -1,8 +1,14 @@
 const plantsInField = []
 
 export const addPlant = (seed) => {
-  // TODO: check if seed is an object or array using isArray method
-  plantsInField.push(seed)
+  if (Array.isArray(seed)) {
+    seed.forEach(subSeed => {
+      plantsInField.push(subSeed)
+    });
+  }
+  else {
+    plantsInField.push(seed)
+  }
 }
 
 export const usePlants = () => plantsInField.slice()

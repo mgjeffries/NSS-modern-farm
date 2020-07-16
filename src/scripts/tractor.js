@@ -21,23 +21,23 @@ const createSeedFromPlant = (plantString) => {
       break;
       
     case "Corn":
+      addPlant(createCorn());
+      break;
+      
+    case "Asparagus":
       addPlant(createAsparagus());
       break;
 
-    case "Asparagus":
-      addPlant(createCorn());
-      break;
-
     case "Wheat":
+      addPlant(createWheat());
+      break;
+      
+    case "Potato":
       addPlant(createPotato());
       break;
-
-    case "Potato":
-      addPlant(createSunflower());
-      break;
-
+      
     case "Sunflower":
-      addPlant(createWheat());
+      addPlant(createSunflower());
       break;
   }
 }
