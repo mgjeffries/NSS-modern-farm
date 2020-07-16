@@ -1,3 +1,5 @@
+// The corn seeds are special, and create two objects
+
 export const createCorn = () => {
   return [
   {
